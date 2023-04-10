@@ -1,0 +1,26 @@
+.container{
+    margin-top: 100px;
+
+}
+.newarrival{
+    background: blue;
+    width: 50px;
+    color:  white;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.price{
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+}
