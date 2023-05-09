@@ -8,37 +8,11 @@
   <meta name="generator" content="Hugo 0.72.0">
   <title>Administrador de productos</title>
 
-  <style>
-    /* Estilos CSS para la página */
-    label {
-      display: block;
-      margin-top: 10px;
-    }
+  <link rel="stylesheet" href="css/agregarprod.css">
 
-    input[type="submit"] {
-      margin-top: 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  <script src="js/agregarprod.js"></script>
 
-    .producto {
-      border: 1px solid black;
-      padding: 10px;
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-    }
 
-    .producto img {
-      max-width: 100px;
-      max-height: 100px;
-    }
-  </style>
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
 
@@ -173,82 +147,7 @@
     crossorigin="anonymous"></script>
   <script src="dashboard.js"></script>
 
-  <script>
-    /* JavaScript para la página */
-    function agregarProducto() {
-      // Obtener los valores de los campos del formulario
-      const nombre = document.getElementById("nombre").value;
-      const imagen = document.getElementById("imagen").files[0];
-      const cantidad = document.getElementById("cantidad").value;
-      const precio = document.getElementById("precio").value;
-
-      // Crear un objeto producto con la información obtenida
-      const producto = {
-        nombre,
-        imagen,
-        cantidad,
-        precio,
-      };
-
-      // Agregar el producto al arreglo de productos
-      productos.push(producto);
-
-      // Limpiar los campos del formulario
-      document.getElementById("nombre").value = "";
-      document.getElementById("imagen").value = "";
-      document.getElementById("cantidad").value = "";
-      document.getElementById("precio").value = "";
-
-      // Imprimir los productos en la página
-      imprimirProductos();
-    }
-
-    function imprimirProductos() {
-      // Obtener el div donde se imprimirán los productos
-      const divProductos = document.getElementById("productos");
-
-      // Limpiar el contenido actual del div
-      divProductos.innerHTML = "";
-
-      // Recorrer el arreglo de productos y crear un div para cada uno
-      for     (let i = 0; i < productos.length; i++) {
-    const producto = productos[i];
-
-    // Crear el div del producto
-    const divProducto = document.createElement("div");
-    divProducto.classList.add("producto");
-
-    // Agregar la imagen del producto
-    const imgProducto = document.createElement("img");
-    imgProducto.src = URL.createObjectURL(producto.imagen);
-    divProducto.appendChild(imgProducto);
-
-    // Agregar el nombre del producto
-    const spanNombre = document.createElement("span");
-    spanNombre.textContent = producto.nombre;
-    divProducto.appendChild(spanNombre);
-
-    // Agregar la cantidad del producto
-    const spanCantidad = document.createElement("span");
-    spanCantidad.textContent = producto.cantidad;
-    divProducto.appendChild(spanCantidad);
-
-    // Agregar el precio del producto
-    const spanPrecio = document.createElement("span");
-    spanPrecio.textContent = "$" + producto.precio;
-    divProducto.appendChild(spanPrecio);
-
-    // Agregar el div del producto al div de productos
-    divProductos.appendChild(divProducto);
-  }
-}
-
-// Arreglo para almacenar los productos
-const productos = [];
-
-// Imprimir los productos en la página al cargar la página
-imprimirProductos();
-</script>
+  
 
 </body>
 
