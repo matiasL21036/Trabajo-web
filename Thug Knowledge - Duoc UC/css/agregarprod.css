@@ -1,0 +1,28 @@
+label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .producto {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .producto img {
+    max-width: 100px;
+    max-height: 100px;
+  }
