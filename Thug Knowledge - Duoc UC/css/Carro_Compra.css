@@ -1,0 +1,11 @@
+button.pagar{
+    background-color: black;
+    width: 244px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 15;
+    cursor: pointer;
+    border: none;
+    color: rgb(233, 238, 238);
+}
+
