@@ -14,7 +14,7 @@
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous">
-
+    <LInk rel="stylesheet" href="css/REGISTRO.CSS"></LInk>
   </head>
 
   <body>
@@ -55,29 +55,33 @@
             <form>
               <div class="mb-3">
                 <label for="inputNombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="inputNombre"
+                <input type="text" class="form-control" name="inputNombre"
                   placeholder="Ingresa tu nombre">
+                  <span></span>
               </div>
               <div class="mb-3">
                 <label for="inputEmail" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="inputEmail"
+                <input type="email" class="form-control" name="inputEmail"
                   placeholder="Ingresa tu correo electrónico">
+                  <span></span>
               </div>
               <div class="mb-3">
                 <label for="inputPassword" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword"
+                <input type="currentpassword" class="form-control" name="inputPassword"
                   placeholder="Ingresa tu contraseña">
+                  <span></span>
               </div>
               <div class="mb-3">
                 <label for="inputConfirmPassword" class="form-label">Confirmar
                   contraseña</label>
-                <input type="password" class="form-control"
-                  id="inputConfirmPassword" placeholder="Confirma tu
-                  contraseña">
+                <input type="newpassword" class="form-control"name="inputConfirmPassword" 
+                placeholder="Confirma tucontraseña">
+                <span</span>
               </div>
               <button type="submit" class="btn btn-primary w-100">Registrarse</button>
               <a href="Shop.html"><button type="button" class="btn btn-secondary w-100 mt-2"
                 onclick="continuarComoInvitado()">Continuar como invitado</button></a>
+                <script src="Js/VALIDACION_REGISTRO.JS"></script>
             </form>
           </div>
         </div>
@@ -98,7 +102,7 @@
               <h5 class="text-uppercase">THUG TRADE</h5>
               <p>
                 THUG TRADE es el sistema mas grande de ventas de Vinilos
-               <br> 
+              <br> 
                 y merch de tus artistas favoritos, comparte la musica, comparte conocimiento.
               </p>
             </div>
