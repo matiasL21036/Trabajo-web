@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.72.0">
   <title>Administrador de productos</title>
+  <link href="css/REGISTRO.CSS">
 
   <link rel="stylesheet" href="css/agregarprod.css">
 
@@ -123,12 +124,12 @@
           </div>
         </div>
         <div id="cajaprods">
-<<<<<<< Updated upstream
         <h1>Registro de productos</h1>
         <form id="formulario-producto" method="post" enctype="multipart/form-data">
           <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" required>
+              <label for="nombreproducto" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombreproducto" required>
+              <span></span>
           </div>
   
           <div class="mb-3">
@@ -152,32 +153,8 @@
       </form>
   
         </div>    
-         
         </div>
       </main>
-=======
-          <h1>Registro de productos</h1>
-          <form onsubmit="return false;">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="imagen">Imagen:</label>
-            <input type="file" id="imagen" name="imagen" accept="image/*" required>
-            <br>
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" min="1" required>
-            <br>
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" min="0.01" step="0.01" required>
-            <br>
-            <input type="submit" value="Agregar producto" onclick="agregarProducto()">
-          </form>
-        </div>
-        <div id="productos">
-          <!-- Aquí se imprimirán los productos agregados -->
-        </div>
-
->>>>>>> Stashed changes
     </div>
     </main>
   </div>
@@ -196,7 +173,6 @@
     integrity="sha384-i+dHPTzZw7YVZOx9lbH5l6lP74sLRtMtwN2XjVqjf3uAGAREAF4LMIUDTWEVs4LI"
     crossorigin="anonymous"></script>
   <script src="dashboard.js"></script>
-
 
 
 </body>
